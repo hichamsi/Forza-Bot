@@ -126,7 +126,9 @@ if(!message.guild.voiceConnection) message.member.voiceChannel.join().then(funct
      play(connection, message);
 })
 break;
-
+case 'myon':
+message.channel.sendMessage('cute+++++++')
+break;
 
 case 'skip':
         var Server = Servers[message.guild.id];
