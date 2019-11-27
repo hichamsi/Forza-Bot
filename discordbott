@@ -216,4 +216,4 @@ case 'embed':
 }
 }
 );
-bot.login(process.env.NjQxNzEwODcwODU4MTcwMzg4.Xcqv-A.Ivzv0q5boqTHtbUFR34VdrII-c8);
+bot.login(process.env.BOT_TOKEN);
