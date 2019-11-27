@@ -10,7 +10,7 @@ var Servers = {};
 
 bot.on('ready', () =>{
     console.log('Forza bot is online!');
-        bot.user.setActivity("Forza Server, bot made by: Hicham#3335", {type: "WATCHING"}).catch(console.error);
+        bot.user.setActivity("Forza Server", {type: "WATCHING"}).catch(console.error);
 })
 bot.on('message', message=>{
             if (message.content === 'Mohamed CH')
