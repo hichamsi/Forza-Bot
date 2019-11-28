@@ -168,6 +168,7 @@ case 'help':
         break;
         case 'moha':
         message.channel.sendMessage('He's Fast, He's Smart, He's lovely, It's Moha!')
+        break;
 case 'bot owner':
         message.channel.sendMessage('Bot Made and owned by: Hicham#3335')
         break;        
