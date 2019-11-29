@@ -126,6 +126,7 @@ if(!message.guild.voiceConnection) message.member.voiceChannel.join().then(funct
      play(connection, message);
 })
 break;
+
 case 'myon':
 message.channel.sendMessage('cute+++++++')
 break;
@@ -166,6 +167,7 @@ case 'help':
         case 'swida9':
         message.channel.sendMessage('wld familya les hommes <3')
         break;
+        
         case 'moha':
         message.channel.sendMessage('He's Fast, He's Smart, He's lovely, It's Moha!')
         break;
