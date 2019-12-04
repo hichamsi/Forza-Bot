@@ -66,10 +66,6 @@ bot.on('message', message=>{
         if (message.content === 'what is my avatar') {
           message.reply(message.author.avatarURL);      
         }
-        if(thing.startsWith('how are you') || thing.startsWith('how r u')) {
-            var messages = ["Im fine And you", "malgri m9wda 3aychin ghaya"];
-            message.reply(messages[Math.floor(Math.random() * messages.length)]);
-        }
         else if (message.content === `${PREFIX}server`) {
                 message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
         }
