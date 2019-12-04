@@ -66,11 +66,6 @@ bot.on('message', message=>{
         if (message.content === 'what is my avatar') {
           message.reply(message.author.avatarURL);      
         }
-        var thing = message.content.toLowerCase();
-        if(thing.startsWith('hello') || thing.startsWith('hi') || thing.startsWith('hey')) {
-            var messages = ["hello", "hey there!", "hi!!!!", "i love you <3", "forza says hi!"];
-            message.reply(messages[Math.floor(Math.random() * messages.length)]);
-        }
         if(thing.startsWith('how are you') || thing.startsWith('how r u')) {
             var messages = ["Im fine And you", "malgri m9wda 3aychin ghaya"];
             message.reply(messages[Math.floor(Math.random() * messages.length)]);
