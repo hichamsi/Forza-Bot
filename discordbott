@@ -168,9 +168,9 @@ case 'help':
         message.channel.sendMessage('wld familya les hommes <3')
         break;
         
-        case 'moha':
-        message.channel.sendMessage('He's Fast, He's Smart, He's lovely, It's Moha!')
-        break;
+ case 'moha':
+                        message.channel.sendMessage('He is Fast, He is lovly, Its Moha ')
+                        break;
 case 'bot owner':
         message.channel.sendMessage('Bot Made and owned by: Hicham#3335')
         break;        
