@@ -17,7 +17,9 @@ bot.on('message', message=>{
                 message.reply('Best friend can you get in your live <3', {files: ['https://upload.wikimedia.org/wikipedia/commons/c/c8/Love_Heart_symbol.svg']})
         if (message.content === 'gif')
         message.reply('Gif', {files: ['https://media.discordapp.net/attachments/585503591956217876/651809307368751125/My_Video.gif']})
- 
+        
+ if (message.content === 'nchallah brbi')
+ message.reply('nchallah brbi', {files: ['https://media.discordapp.net/attachments/585503591956217876/652917067644665856/My_Video1.gif']})
         if (message.content === 'team forza logo') {
                 message.reply('Team forza logo', {files: ['https://cdn.discordapp.com/attachments/585935616919863328/647854293235531786/Forza.jpg']})
         }
