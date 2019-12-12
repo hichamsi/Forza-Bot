@@ -74,18 +74,6 @@ bot.on('message', message=>{
         else if (message.content === `${PREFIX}user-info`) {
                 message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
         }
-        else if(args[0] ==  'whois') {
-                let member = msg.mentions.users.first();
-                if(member == undefined) msg.reply('please specify someone!');
-                else {
-                        let embed = new Discord.RichEmbed()
-                        .setTitle(member.username + '\'s Discord profile')
-                        .setDescription('Discord name: ' + member.tag + '\nJoin date: ' + member.createdAt)
-                        .setColor([199, 21, 133])
-                        .setImage(member.avatarURL);
-                        message.channel.send(embed);   
-                }
-        }
 let args = message.content.substring(PREFIX.length).split(" ");
      switch(args[0]){
              case 'react':
