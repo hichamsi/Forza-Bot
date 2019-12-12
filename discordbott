@@ -68,25 +68,34 @@ bot.on('message', message=>{
         if (message.content === 'what is my avatar') {
           message.reply(message.author.avatarURL);      
         }
+        var thing = message.content.toLowerCase();
+        if(thing.startsWith('hello') || thing.startsWith('hi') || thing.startsWith('hey')) {
+            var messages = ["hello", "hey there!", "hi!!!!", "i love you <3", "forza says hi!"];
+            message.reply(messages[Math.floor(Math.random() * messages.length)]);
+        }
+        if(thing.startsWith('how are you') || thing.startsWith('how r u')) {
+            var messages = ["Im fine And you", "malgri m9wda 3aychin ghaya"];
+            message.reply(messages[Math.floor(Math.random() * messages.length)]);
+        }
         else if (message.content === `${PREFIX}server`) {
                 message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
         }
         else if (message.content === `${PREFIX}user-info`) {
                 message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
         }
-let args = message.content.substring(PREFIX.length).split(" ");
-if(args[0] ==  'whois') {
-        let member = msg.mentions.users.first();
-        if(member == undefined) msg.reply('please specify someone!');
-        else {
-                let embed = new Discord.RichEmbed()
-                .setTitle(member.username + '\'s Discord profile')
-                .setDescription('Discord name: ' + member.tag + '\nJoin date: ' + member.createdAt)
-                .setColor([199, 21, 133])
-                .setImage(member.avatarURL);
-                msg.channel.send(embed);   
+        else if(args[0] ==  'whois') {
+                let member = msg.mentions.users.first();
+                if(member == undefined) msg.reply('please specify someone!');
+                else {
+                        let embed = new Discord.RichEmbed()
+                        .setTitle(member.username + '\'s Discord profile')
+                        .setDescription('Discord name: ' + member.tag + '\nJoin date: ' + member.createdAt)
+                        .setColor([199, 21, 133])
+                        .setImage(member.avatarURL);
+                        message.channel.send(embed);   
+                }
         }
-}
+let args = message.content.substring(PREFIX.length).split(" ");
      switch(args[0]){
              case 'react':
                      message.channel.send('this is going to react to your message!').then(message.react('😂'));
