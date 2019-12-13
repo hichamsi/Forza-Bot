@@ -76,6 +76,19 @@ bot.on('message', message=>{
         }
 let args = message.content.substring(PREFIX.length).split(" ");
      switch(args[0]){
+      case 'whois': {
+                let member = msg.mentions.users.first();
+                if(member == undefined) msg.reply('please specify someone!');
+                else {
+                        let embed = new Discord.RichEmbed()
+                        .setTitle(member.username + '\'s Discord profile')
+                        .setDescription('Discord name: ' + member.tag + '\nJoin date: ' + member.createdAt)
+                        .setColor([199, 21, 133])
+                        .setImage(member.avatarURL);
+                        msg.channel.send(embed);   
+                }}
+
+break;
              case 'react':
                      message.channel.send('this is going to react to your message!').then(message.react('😂'));
                      break;
