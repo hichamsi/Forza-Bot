@@ -10,7 +10,7 @@ var Servers = {};
 
 bot.on('ready', () =>{
     console.log('Forza bot is online!');
-        bot.user.setActivity("Forza Server, Hosting 24h/7d", {type: "WATCHING"}).catch(console.error);
+        bot.user.setActivity("Forza Server, Hosting 24h/7d, https://invite.gg/teamForza ", {type: "WATCHING"}).catch(console.error);
 })
 bot.on('message', message=>{
             if (message.content === 'Mohamed CH')
